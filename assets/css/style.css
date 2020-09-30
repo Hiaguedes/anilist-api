@@ -1,25 +1,36 @@
-.main__input {
-  display: block;
+.header {
+  position: relative; }
+
+.header__input {
+  position: absolute;
   margin: 1.5rem auto;
   width: 25%;
   padding: 0.5rem 0.2rem;
   border-radius: 10px;
-  border: 0.1px solid #868686; }
+  border: 0.1px solid #868686;
+  z-index: 2;
+  top: 37%;
+  left: 35%; }
 
 .main__section {
-  margin: 0 2rem;
+  margin: 0.5rem 4rem;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+.main__section::after {
+  content: "";
+  flex: auto; }
 
 .card {
   display: grid;
-  width: 25%;
+  width: 20%;
   height: 200px;
   grid-template-areas: "imagem info";
   grid-template-columns: 6fr 4fr;
   grid-template-rows: 100%;
   border: 1px solid;
-  margin: 0.5rem 0.1rem; }
+  margin: 1rem 2rem 0; }
 
 .card__image {
   grid-area: imagem;
@@ -34,5 +45,41 @@
   display: grid;
   grid-template-areas: "desc" "title";
   grid-template-rows: 6fr 4fr; }
+
+.card__link {
+  display: inline;
+  text-decoration: none;
+  color: inherit; }
+
+.card__title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  color: rgba(90, 90, 90, 0.801);
+  text-emphasis: 500;
+  margin: 0.5rem 0.2rem; }
+
+.card__desc {
+  margin: 0.5rem 0.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-emphasis: 700; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px; }
+
+.header__cover {
+  background-image: url(https://cdnb.artstation.com/p/assets/images/images/013/089/477/large/nick-silva-rewrite-final-beta-artstation.jpg?1537994900);
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15rem;
+  background-position-y: 10%; }
 
 /*# sourceMappingURL=style.css.map */

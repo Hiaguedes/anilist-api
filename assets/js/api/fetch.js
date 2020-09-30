@@ -48,7 +48,7 @@ handleResponse(response) {
 }
 
  handleData(data) {
-    console.log(data); //in case you want to see what is the return from anilist
+    //console.log(data); //in case you want to see what is the return from anilist
     return data
 }
 

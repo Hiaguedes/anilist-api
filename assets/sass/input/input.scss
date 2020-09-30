@@ -1,8 +1,15 @@
-.main__input {
-    display: block;
+.header{
+    position: relative;
+}
+
+.header__input {
+    position: absolute;
     margin: 1.5rem auto;
     width: 25%;
     padding: 0.5rem 0.2rem;
     border-radius: 10px;
     border: 0.1px solid rgb(134, 134, 134);
+    z-index: 2;
+    top: 37%;
+    left: 35%;
 }

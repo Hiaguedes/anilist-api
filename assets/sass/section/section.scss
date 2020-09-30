@@ -1,5 +1,11 @@
 .main__section{
-    margin: 0 2rem;
+    margin: 0.5rem 4rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.main__section::after{
+    content: "";
+    flex: auto;
 }
