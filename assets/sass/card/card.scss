@@ -1,0 +1,28 @@
+.card{
+    display: grid;
+    width: 25%;
+    height: 200px;
+    grid-template-areas: "imagem info";
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 100%;
+    border: 1px solid;
+    margin: 0.5rem 0.1rem;
+}
+
+.card__image{
+    grid-area: imagem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 90, 90, 0.521);
+}
+.card__info{
+    grid-area: info;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "desc" "title";
+    grid-template-rows: 6fr 4fr;
+}
+
+
+

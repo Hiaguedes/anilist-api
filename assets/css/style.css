@@ -1,0 +1,38 @@
+.main__input {
+  display: block;
+  margin: 1.5rem auto;
+  width: 25%;
+  padding: 0.5rem 0.2rem;
+  border-radius: 10px;
+  border: 0.1px solid #868686; }
+
+.main__section {
+  margin: 0 2rem;
+  display: flex;
+  flex-wrap: wrap; }
+
+.card {
+  display: grid;
+  width: 25%;
+  height: 200px;
+  grid-template-areas: "imagem info";
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: 100%;
+  border: 1px solid;
+  margin: 0.5rem 0.1rem; }
+
+.card__image {
+  grid-area: imagem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(90, 90, 90, 0.521); }
+
+.card__info {
+  grid-area: info;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "desc" "title";
+  grid-template-rows: 6fr 4fr; }
+
+/*# sourceMappingURL=style.css.map */
